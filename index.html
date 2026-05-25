@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Website</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+        <!-- navigation menu -->
+        <nav aria-label="Main navigation">
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    <a href="#home">Galanis Ioannis</a>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#home" data-i18n="navHome">Home</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about" data-i18n="navAbout">About Me</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills" data-i18n="navSkills">Skills</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#education" data-i18n="navEducation">Education</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#projects" data-i18n="navProjects">Projects</a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a href="#contact" data-i18n="navContact">Contact</a></div>
+                </div>
+                <div class="language-switcher" aria-label="Language selector">
+                    <button class="language-button active" type="button" data-lang="en">EN</button>
+                    <button class="language-button" type="button" data-lang="el">EL</button>
+                </div>
+                <button class="hamburg" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+                <div class="dropdown" id="mobile-menu">
+                    <div class="links">
+                        <a href="#home" data-i18n="navHome">Home</a>
+                        <a href="#about" data-i18n="navAbout">About Me</a>
+                        <a href="#skills" data-i18n="navSkills">Skills</a>
+                        <a href="#education" data-i18n="navEducation">Education</a>
+                        <a href="#projects" data-i18n="navProjects">Projects</a>
+                        <a href="#contact" data-i18n="navContact">Contact</a>
+                        <div class="language-switcher mobile-language" aria-label="Language selector">
+                            <button class="language-button active" type="button" data-lang="en">EN</button>
+                            <button class="language-button" type="button" data-lang="el">EL</button>
+                        </div>
+                        <button class="cancel" type="button" aria-label="Close navigation menu">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                </div>
+        </nav>
+
+    <div class="scroll-button">
+        <a href="#home" class="back-to-top" aria-label="Back to top" title="Back to top" data-i18n-attr="backToTopLabel">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+    </div>
+    
+    <section id="home">
+        <div class="main-container">
+           <div class="image" data-aos="zoom-out" data-aos-duration="1500" data-aos-delay="700">
+                <img src="pfp2.jpg" alt="Portrait of Galanis Ioannis">
+           </div>
+           <div class="content">
+                <h1 data-i18n-html="heroTitle" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                    Hey I'm
+                    <span>Ioannis</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                    <span data-i18n="heroTypePrefix">I'm a</span>
+                    <span class="typewriter-text"></span>
+                </div>
+                <p data-i18n="heroText" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Computer Science undergraduate passionate about software development, problem solving, and learning new technologies. Currently building skills in programming, web development, and computer systems through academic projects and personal learning.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/ioannis-galanis-03756b411/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn profile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/IoannisGalanhs" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" title="GitHub profile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://x.com/Igalanhs" target="_blank" rel="noopener noreferrer" aria-label="X profile" title="X profile" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a class="placeholder-link" href="#" aria-label="Instagram profile" title="Add your Instagram URL" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1700">
+                    <a class="primary-button" href="#contact" data-i18n="hireMe">Hire me</a>
+                </div>  
+           </div>
+           </div>
+    </section>
+
+
+
+<!--About Me-->
+
+<section class="about" id="about">
+    <div class="content">
+        <div class="title"data-aos="fade-up" data-aos-duration="1500"><span data-i18n="aboutTitle">About Me</span></div>
+        <div class="about-details">
+            <div class="left"data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                <img src="pfp2.jpg" alt="Portrait of Galanis Ioannis"/>
+            </div>
+            <div class="right">
+                <div class="topic" data-i18n="aboutTopic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Working Towards My Goals</div>
+                <p data-i18n="aboutText" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">
+                    I am an undergraduate Software Engineering student focused on continuously improving my technical skills and expanding my knowledge in software development and technology. I enjoy learning new tools and technologies, solving problems, and working on projects that help me grow both personally and professionally.
+                    I am also a strong team player with good communication skills, and I work well with others in collaborative environments. I am motivated to gain real-world experience, contribute to meaningful projects, and continue developing as a future software engineer.
+                 </p>
+                 <div class="button"data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                    <button type="button" data-i18n="downloadCv">Download CV</button>
+                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!--My skills-->
+<section class="skills" id="skills">
+    <div class="content">
+        <div class="title"data-aos="fade-up" data-aos-duration="1200"><span data-i18n="skillsTitle">My Skills</span></div>
+        <div class="skills-details">
+            <div class="text">
+                <div class="topic" data-i18n="skillsTopic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                    Skills Built Through Practice
+                </div>
+                <p data-i18n="skillsText" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">Skilled in Python, HTML, CSS, SQL, and Microsoft Excel, with a strong foundation in programming, database management, and web development. Comfortable working on academic and personal projects, learning new technologies, and applying problem-solving skills to technical challenges. Continuously developing both technical and collaborative skills through coursework and self-learning.</p>
+                <div class="experience"data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                    <div class="num">2+</div>
+                    <div class="exp">
+                        <span data-i18n="yearsOf">Years Of</span><br/> 
+                        <span data-i18n="learning">Learning</span>
+                    </div>
+                </div>
+            </div>
+            <div class="boxes">
+                <div class="box">
+                    <div class="topic"data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150">Python</div>
+                    <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">30%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150">SQL</div>
+                    <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">20%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450">HTML</div>
+                    <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">50%</div>
+                </div>
+                <div class="box">
+                    <div class="topic"data-aos="fade-left" data-aos-duration="1200" data-aos-delay="450">Excel</div>
+                    <div class="per"data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600">40%</div>
+                </div>  
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Education-->
+
+<section class="services" id="education">
+    <div class="content">
+        <div class="title"data-aos="fade-up" data-aos-duration="1200"><span data-i18n="educationTitle">Education</span></div>
+        <div class="boxes">
+            <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <div class="icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <div class="topic" data-i18n="educationDegree">BSc in Applied Informatics</div>
+                <p data-i18n="educationText">Bachelor of Science (BSc) in Applied Informatics at the University of Macedonia in Thessaloniki, Greece. Currently developing knowledge and practical skills in software engineering, programming, databases, information systems, and computer technologies through academic coursework and projects.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Projects-->
+
+<section class="services" id="projects">
+    <div class="content">
+        <div class="title"data-aos="fade-up" data-aos-duration="1200"><span data-i18n="projectsTitle">Projects</span></div>
+        <div class="boxes">
+            <div class="box"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                <div class="icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="topic" data-i18n="projectName">Portfolio Website</div>
+                <p data-i18n="projectText">A personal portfolio built with HTML, CSS, and JavaScript to showcase my background, skills, education, and contact information.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Contact Me-->
+
+<section class="contact" id="contact">
+    <div class="content">
+        <div class="title"data-aos="fade-up" data-aos-delay="1500">
+            <span data-i18n="contactTitle">Contact Me</span>
+        </div>
+        <div class="text">
+            <div class="topic" data-i18n="contactTopic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
+            <div class="contact-email" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300">
+                <span class="email-label" data-i18n="emailLabel">Email</span>
+                <a href="mailto:igalanhs@gmail.com">igalanhs@gmail.com</a>
+            </div>
+            <div class="button">
+                <a class="primary-button" href="mailto:igalanhs@gmail.com" data-i18n="letsChat" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">Let's Chat</a>
+                <button class="copy-email-button" type="button" data-email="igalanhs@gmail.com" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="500">
+                    <i class="fa-regular fa-copy"></i>
+                    <span data-i18n="copyEmail">Copy email</span>
+                </button>
+            </div>
+            <p class="copy-status" aria-live="polite"></p>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+
+<footer>
+    <div class="text">
+        <span><span data-i18n="createdBy">Created By</span>
+            <a href="#home">galanisioannis</a>
+            <span data-i18n="rights">&#169;2026 All Rights Reserved</span>
+        </span>
+    </div>    
+</footer>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    if (window.AOS) {
+        AOS.init();
+    }
+</script>
+<script src="script.js"></script>
+
+
+</body>
+</html>
